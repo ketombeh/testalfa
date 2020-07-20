@@ -20,7 +20,6 @@ class MainAdapter : RecyclerView.Adapter<HomeViewHolder>() {
         context = parent.context
         val view: View = LayoutInflater.from(context).inflate(R.layout.item_home, parent, false)
         val holder = HomeViewHolder(view)
-//        holder.setOnItemClickListener(onItemClickListener)
         return holder
     }
 
