@@ -3,6 +3,7 @@ package com.aries.testalfa.ui
 import android.app.Activity
 import android.app.ProgressDialog
 import android.content.Intent
+import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -10,6 +11,7 @@ import android.view.View
 import com.aries.testalfa.R
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.activity_articles.*
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.layout_news_detail.*
 import org.jetbrains.anko.indeterminateProgressDialog
 
@@ -52,6 +54,11 @@ class ArticlesActivity : AppCompatActivity() {
             tvDirector.text = authorNews
             tvWriter.text = descNews
             Glide.with(this).load(imageNews).into(ivPoster)
+            val font = Typeface.createFromAsset(assets, "fonts/Poppins-SemiBold.ttf")
+            val fonts = Typeface.createFromAsset(assets, "fonts/Poppins-Regular.ttf")
+            tvTitle.setTypeface(font)
+            tvDirector.setTypeface(fonts)
+            tvWriter.setTypeface(fonts)
             tvDetail.setOnClickListener(View.OnClickListener {
                 var intent = Intent(applicationContext , WebviewActivity::class.java)
                 intent.putExtra("url" , urlNews)
