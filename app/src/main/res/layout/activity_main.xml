@@ -5,7 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/colorWhite"
     tools:context=".ui.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:text="Alfamart Test"
+        android:textSize="35sp"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorTextAlfa"/>
 
     <com.synnapps.carouselview.CarouselView
         android:id="@+id/carouselView"
@@ -13,16 +23,13 @@
         android:layout_height="200dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_below="@+id/rlt_home"
         app:fillColor="#FFFFFFFF"
         app:pageColor="#00000000"
-        app:radius="6dp"
+        app:radius="4dp"
         app:slideInterval="3000"
         app:strokeColor="#FF777777"
         app:strokeWidth="1dp"
-        app:indicatorGravity="right"/>
+        app:indicatorGravity="center|bottom"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"

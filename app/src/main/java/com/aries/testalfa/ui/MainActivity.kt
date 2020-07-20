@@ -1,6 +1,7 @@
 package com.aries.testalfa.ui
 
 import android.content.Intent
+import android.graphics.Typeface
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -23,6 +24,10 @@ class MainActivity : AppCompatActivity() , OnItemClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val font = Typeface.createFromAsset(assets, "fonts/Poppins-Bold.ttf")
+        textView.setTypeface(font)
+
         mAdapter = MainAdapter()
         mAdapter?.listener = this
         loadWork()

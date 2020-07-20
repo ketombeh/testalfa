@@ -17,6 +17,7 @@ class WebviewActivity : AppCompatActivity() {
         setContentView(R.layout.activity_webview)
         val settings = webView.settings
 
+        //setting
         settings.javaScriptEnabled = true
 
         // Enable and setup web view cache
