@@ -27,15 +27,14 @@
             <ImageView
                 android:id="@+id/ivPoster"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="200dp"
                 android:layout_gravity="center_vertical"
                 android:background="@drawable/bg_image_reounded"
                 android:src="@drawable/noimage" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="12dp">
+                android:layout_height="wrap_content">
 
                 <TextView
                     android:id="@+id/tvTitle"

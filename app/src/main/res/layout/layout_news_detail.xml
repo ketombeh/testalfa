@@ -20,59 +20,35 @@
             android:textSize="@dimen/txt_large"
             tools:text="Wonder Woman" />
 
-    </RelativeLayout>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_long"
-        android:elevation="4dp"
-        app:cardUseCompatPadding="true">
-
-        <LinearLayout
+        <TextView
+            android:id="@+id/tvWriter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="@dimen/margin_medium">
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_normal"
+            android:layout_below="@+id/tvTitle" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Author"
-                android:textSize="@dimen/txt_medium" />
+        <TextView
+            android:id="@+id/tvDirector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_normal"
+            android:layout_below="@+id/tvWriter"/>
 
-            <TextView
-                android:id="@+id/tvDirector"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/colorBlack"
-                android:textSize="@dimen/txt_normal" />
+        <TextView
+            android:id="@+id/tvDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/tvDirector"
+            android:text="Baca Selengkapnya"
+            android:textColor="@color/colorButton"
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Description"
-                android:textSize="@dimen/txt_medium" />
-
-            <TextView
-                android:id="@+id/tvWriter"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/colorBlack"
-                android:textSize="@dimen/txt_normal" />
-
-            <TextView
-                android:id="@+id/tvDetail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:layout_marginTop="8dp"
-                android:layout_below="@id/tvWriter"
-                android:text="Baca Selengkapnya"
-                android:textColor="@color/colorButton"
-                android:textSize="14sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+    </RelativeLayout>
 </LinearLayout>
